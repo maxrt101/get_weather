@@ -2,7 +2,7 @@
 Python version of obs0letes [Get-Weather](https://github.com/obs0lete/Get-Weather)  
   
 In order to work, this script needs Openwheathersmap's **Api Key**. **With out it, script will not work!**  
-You can get yours at  https://openweathermap.org/, just sign up, and 
+You can get yours at  https://openweathermap.org/, just sign up, and find Api Keys button.
 
 ### Installation  
 1.[Download](https://github.com/maxrt101/get_weather/archive/master.zip) or [clone](https://github.com/maxrt101/get_weather) get weather.  
