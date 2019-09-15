@@ -12,9 +12,9 @@ parser.add_argument('-u', action='store', dest='units', type=str, help='Units', 
 
 args = parser.parse_args()
 
-src = """# get-weather.py 1.0 by maxrt101
+src = """# -*- coding: utf-8 -*-
+# get-weather.py 1.0 by maxrt101
 # pictures and idea by obsol0lete 
-# -*- coding: utf-8 -*-
 import sys
 import json
 import urllib2
@@ -66,6 +66,6 @@ if args.cli:
 	cli()
 else:
 	if (args.api_key == '') or (args.city == '') or (args.country_code == ''):
-		print('ERROR: ')
+		print('ERROR: No values where provided. Add --cli flag for cli installer.')
 		exit()
 	line_prepender('src.py', 'get_weather.py', src.format(args.api_key, args.city, args.country_code, args.units))
