@@ -1,4 +1,4 @@
-# get-weather.py installer v0.1 by maxrt101
+# get-weather.py installer v0.3 by maxrt101
 # -*- coding: utf-8 -*-
 import argparse
 
@@ -11,6 +11,8 @@ parser.add_argument('-cc', action='store', dest='country_code', type=str, help='
 parser.add_argument('-u', action='store', dest='units', type=str, help='Units', default='metric')
 
 args = parser.parse_args()
+
+version = '0.3'
 
 src = """# -*- coding: utf-8 -*-
 # get-weather.py 1.0 by maxrt101
@@ -47,20 +49,30 @@ def line_prepender(orig, filename, line):
 def cli():
 	print("Enter your api key")
 	print("Which you can obtain on https://openweathermap.org/, just sign up, it's free")
-	api_key = raw_response(': ')
+	api_key = raw_input(': ')
 	print("Enter city name")
 	print("If you live in small one, just use the name of nearest big city")
-	city = raw_response(': ')
+	city = raw_input(': ')
 	print("Enter country code")
-	country_code = raw_response(': ')
+	country_code = raw_input(': ')
 	print("Units (default metric)")
 	print("Leave blank for Kelvin/ 'metric' for Celsius/ 'imperial' for Fahrenheit")
-	units = raw_response(': ')
+	units = raw_input(': ')
 	
 	print('Saving file...')
-	line_prepender('src.py', 'get_weather.py', src.format(args.api_key, args.city, args.country_code, args.units))
+	
+	if args.cli:
+		src_ = src.format(api_key, city, country_code, units)
+	else:
+		src_ = src.format(args.api_key, args.city, args.country_code, args.units)
+	
+	line_prepender('src.py', 'get_weather.py', src_)
 
 	print('Done')
+
+if args.v:
+	print('get_weather installer v{} (c)2019 maxrt101'.format(version))
+	exit()
 
 if args.cli:
 	cli()
