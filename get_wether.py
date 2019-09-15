@@ -1,6 +1,6 @@
-# get-weather.py 1.0 by maxrt101
-# pictures and idea by obsol0lete
 # -*- coding: utf-8 -*-
+# get-weather.py 1 by maxrt101
+# pictures and idea by obsol0lete
 import sys
 import json
 import urllib2
@@ -18,7 +18,7 @@ parser.add_argument('-u', action='store', dest='units', type=str, help='Units', 
 
 args = parser.parse_args()
 
-version = '1.0'
+version = '1'
 
 colors = {
 	"white": '\033[0m',
