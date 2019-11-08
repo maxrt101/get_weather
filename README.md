@@ -22,7 +22,7 @@ You can get yours at  https://openweathermap.org/, just sign up, and find Api Ke
  4. Run `get_weather.py` (See Usage)
 
 ### Usage
-`Usage: get_wether_dev.py [-h] [-v] [-sr] [-a API_KEY] [-c CITY] [-cc COUNTRY_CODE] [-u UNITS]`  
+`Usage: get_wether.py [-h] [-v] [-sr] [-a API_KEY] [-c CITY] [-cc COUNTRY_CODE] [-u UNITS]`  
 
 #### Arguments:  
 **-h** - Help. Display help message and exit  
