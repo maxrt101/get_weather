@@ -173,7 +173,7 @@ def get_weather(api_key, city_name, country_name, units):
 		print("ERROR: invalid weather id")
 
 if args.v:
-	print('get_weather v{} (c)2019 maxrt101'.format(version))
+	print('get_weather v{} (c)2020 maxrt101'.format(version))
 else:
 	if (args.api_key == '') or (args.city == '') or (args.country_code == ''):
 		print('ERROR: make sure that api key, city and country code is pesent')
