@@ -1,5 +1,5 @@
 # Get weather python  
-Python version of obs0letes [Get-Weather](https://github.com/obs0lete/Get-Weather)  
+Python version of obs0lete's [Get-Weather](https://github.com/obs0lete/Get-Weather)  
   
 In order to work, this script needs Openwheathersmap's **Api Key**. **With out it, script will not work!**  
 You can get yours at  https://openweathermap.org/, just sign up, and find Api Keys button.
